@@ -94,6 +94,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F62126EB2C0BFFCC0056478D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F64CFD4B2B785741001A505C /* ViewModel */,
+				F64CFD542B785C52001A505C /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F62126EC2C0C02A80056478D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F64CFD3E2B784CE0001A505C /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F62126ED2C0C03E20056478D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F64CFD142B78471C001A505C /* CloneTodoApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		F64CFD082B78471C001A505C = {
 			isa = PBXGroup;
 			children = (
@@ -117,13 +142,10 @@
 		F64CFD132B78471C001A505C /* cloneTodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				F62126ED2C0C03E20056478D /* Application */,
+				F62126EC2C0C02A80056478D /* Domain */,
+				F62126EB2C0BFFCC0056478D /* Presentation */,
 				65875FAB2B9D4A270024EB67 /* cloneTodoApp.entitlements */,
-				F64CFD542B785C52001A505C /* view */,
-				F64CFD4B2B785741001A505C /* viewModel */,
-				F64CFD3E2B784CE0001A505C /* data */,
-				F64CFD142B78471C001A505C /* CloneTodoApp.swift */,
-				65875FA72B9C450F0024EB67 /* AppleLoginView.swift */,
-				F64CFD162B78471C001A505C /* ListView.swift */,
 				F64CFD182B78471D001A505C /* Assets.xcassets */,
 				F64CFD1A2B78471D001A505C /* Preview Content */,
 			);
@@ -155,30 +177,32 @@
 			path = cloneTodoAppUITests;
 			sourceTree = "<group>";
 		};
-		F64CFD3E2B784CE0001A505C /* data */ = {
+		F64CFD3E2B784CE0001A505C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				F64CFD3F2B784CFE001A505C /* ItemModel.swift */,
 			);
-			path = data;
+			path = Entities;
 			sourceTree = "<group>";
 		};
-		F64CFD4B2B785741001A505C /* viewModel */ = {
+		F64CFD4B2B785741001A505C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				F64CFD4C2B78574D001A505C /* ListViewModel.swift */,
 			);
-			path = viewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		F64CFD542B785C52001A505C /* view */ = {
+		F64CFD542B785C52001A505C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65875FA72B9C450F0024EB67 /* AppleLoginView.swift */,
+				F64CFD162B78471C001A505C /* ListView.swift */,
 				F64CFD472B784F37001A505C /* ListRowView.swift */,
 				F64CFD552B7868BA001A505C /* AddView.swift */,
 				F64CFD592B7873FC001A505C /* NoItemsView.swift */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
